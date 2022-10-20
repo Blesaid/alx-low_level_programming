@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer - entry point
- * h: hour, 
- * m: minute
+ * h: hour,
+ * @m: minute
  * Return: 24hours
  */
 void jack_bauer(void)
