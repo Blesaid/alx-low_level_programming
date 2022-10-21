@@ -5,12 +5,22 @@
  */
 int main(void)
 {
-	unsigned long int x, n = 612852475143;
-	for (x = 3; x < 782849; x = x + 2)
+	long p = 612852475143;
+	int x;
+
+	while (x++ < p / 2)
 	{
-		while ((n % x == 0) && (n != x))
-			n = n / x;
+		if (p % x == 0)
+		{
+			p /= 2;
+			continue;
+		}
+		for (x = 3; x < p / 2; x += 2)
+		{
+			if (p % x == 0)
+				p /= x;
+		}
 	}
-	printf("%lu\n", n);
+	printf("%1d\n", p);
 	return (0);
 }
