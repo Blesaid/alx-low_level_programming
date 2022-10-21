@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_most_numbers - entry point
@@ -8,11 +9,13 @@ void print_most_numbers(void)
 {
 	int x;
 
+	for (x >= 0; x <= 9; x++)
 	{
-		for (x >= 0; x <= 9; x != 2; x != 4; x++)
-			_putchar ('x');
+		if ((x == 2) || (x == 4))
+		{
+			continue;
+		}
+		_putchar(x);
 	}
-	_putchar ('x');
-
-	return (0);
+	_putchar('\n');
 }
