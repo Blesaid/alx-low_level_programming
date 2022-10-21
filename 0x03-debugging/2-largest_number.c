@@ -8,23 +8,20 @@
  */
 int largest_number(int a, int b, int c)
 {
-	int largest;
+	int x;
 
-	if (a > c)
+	if (a >= b && a >= c)
 	{
-		if (b > c)
-			largest = a;
-		else if (a > c)
-			largest = a;
-		else
-			largest = c;
+		x = a;
+	}
+	else if (b >= a && b >= c)
+	{
+		l = b;
 	}
 	else
 	{
-		if (b > c)
-			largest = c;
-		else
-			largeat = b;
+		l = c;
 	}
-}
 
+	return (l);
+}
