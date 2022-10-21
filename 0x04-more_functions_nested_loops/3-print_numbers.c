@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - entry point
- *
+ * @x: checked
  * Return: 0
  */
 void print_numbers(void)
