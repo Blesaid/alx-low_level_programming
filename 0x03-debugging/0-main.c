@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	int x;
+	int i;
 
-	x = 0;
-	positiive_or_negative(x);
+	i = 0;
+	positiive_or_negative(i);
 
 	return (0);
 }
