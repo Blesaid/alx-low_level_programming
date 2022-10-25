@@ -17,7 +17,7 @@ int _atoi(char *s)
 		if (*s >= '0' && *s <= '9')
 		{
 			null_flag = 1;
-			t = t * 10 + *s - '0';
+			y = y * 10 + *s - '0';
 		}
 
 		else if (null_flag)
@@ -25,7 +25,7 @@ int _atoi(char *s)
 		s++;
 	}
 	if (x < 0)
-		t = (-t);
+		y = (-y);
 
-	return (t);
+	return (y);
 }
