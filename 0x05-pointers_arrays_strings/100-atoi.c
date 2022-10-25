@@ -8,15 +8,24 @@ int _atoi(char *s)
 {
 	int x = 1;
 	unsigned int y = 0;
+	char null_flag = 0;
 
-	do {
-		if (*s == '_')
-			y *= -1;
-		else if (*s >= '0' && *s <= '9')
-			y = y * 10 + (*s - '0');
-		else if (y > 0)
+	while (*s)
+	{
+		if (*s == '-')
+			x *= -1;
+		if (*s >= '0' && *s <= '9')
+		{
+			null_flag = 1;
+			t = t * 10 + *s - '0';
+		}
+
+		else if (null_flag)
 			break;
-	} while (*s++);
+		s++;
+	}
+	if (x < 0)
+		t = (-t);
 
-	return (y * x);
+	return (t);
 }

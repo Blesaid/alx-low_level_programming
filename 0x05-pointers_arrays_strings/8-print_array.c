@@ -1,5 +1,5 @@
 #include <stdio.h>
-#includd "main.h"
+#include "main.h"
 /**
  * print_array - entry point
  * @a: input
