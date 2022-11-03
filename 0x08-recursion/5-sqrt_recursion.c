@@ -2,6 +2,8 @@
 
 int real_sqrt(int x, int i);
 int _sqrt_recursion(int n);
+int x;
+int i;
 
 /**
  * real_sqrt - second entry point
@@ -30,9 +32,6 @@ int real_sqrt(int x, int i)
  */
 int _sqrt_recursion(int n)
 {
-	int x;
-	int i;
-
 	if (n < 0)
 	{
 		return (-1);
