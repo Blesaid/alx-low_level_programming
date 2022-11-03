@@ -27,11 +27,12 @@ int real_sqrt(int x, int i)
  * _sqrt_recursion - entry point
  * real_sqrt - second entry point
  * @n: integer
- * @i: iterator
  * Return: integer
  */
 int _sqrt_recursion(int n)
 {
+	int i = 0;
+
 	if (n < 0)
 	{
 		return (-1);
@@ -39,10 +40,6 @@ int _sqrt_recursion(int n)
 	if (n == 1)
 	{
 		return (1);
-	}
-	if (n == 0)
-	{
-		return (0);
 	}
 	return (real_sqrt(x, i));
 }
