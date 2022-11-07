@@ -4,7 +4,6 @@
  * free_grid - entry point
  * @grid: array
  * @height: size
- * Return: 0
  */
 void free_grid(int **grid, int height)
 {
