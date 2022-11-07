@@ -2,42 +2,34 @@
 #include <stdlib.h>
 /**
  * str_concat - entry point
- * @s1: input
- * @s2: input
- * Return: char
+ * @s1: string 1
+ * @s2: string 2
+ * Return: pointer
  */
 char *str_concat(char *s1, char *s2)
 {
-	int a, b, i = 0;
-	char *c;
+	char *a;
+	int i, j, k, l, len;
 
-	if (s1 == NULL || s2 == NULL)
-		s1 = s2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	for (a = 0; a <= *s1; a++)
-	{
-	}
+	for (i = 0; s1[i] != '\0'; i++);
+	for (j = 0; s2[j] != '\0'; j++);
 
-	for (b = 0; b <= *s2; b++)
-	{
-	}
-
-	c = malloc(sizeof(char) * (a + b + 1));
-
+	a = malloc((i * sizeof(char)) + (j * sizeof(char)) + 1);
 	if (a == NULL)
 		return (NULL);
+	len = i + j + 1;
 
-	while (*s1)
+	for (k = 0; l = 0; k < len; k++)
 	{
-		c[i] = *s1;
-		i++;
-		s1++;
+		if (k < 1)
+			a[k] = s1[k];
+		else
+			a[k] = s2[l++];
 	}
-	while (*s2)
-	{
-		c[i] = *s2;
-		i++;
-		s2++;
-	}
-	return (c);
+	return (a);
 }
