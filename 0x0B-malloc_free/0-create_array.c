@@ -1,6 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
 /**
- * create-array - entry point
+ * create_array - entry point
  * @size: size of input
  * @c: char
  * Return: 0

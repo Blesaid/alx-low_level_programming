@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strdup - entry point
@@ -25,3 +26,4 @@ char *_strdup(char *str)
 	if (a == NULL)
 		return (NULL);
 	return (a);
+}
