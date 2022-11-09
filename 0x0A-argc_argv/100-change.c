@@ -8,18 +8,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, y, z;
+	int x, y, z = 0;
 	int coins[] = {25, 10, 5, 2, 1};
-	(void)argc;
 
 	if (argc != 2)
 	{
-		printf("%s\n", "Error");
+		printf("Error\n");
 		return (1);
 	}
 
 	x = atoi(argv[1]);
-	if (x < 0)
+	if (x <= 0)
 	{
 		printf("0\n");
 		return (0);
