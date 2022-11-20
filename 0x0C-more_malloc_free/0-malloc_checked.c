@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * malloc_checked - entry point
+ * *malloc_checked - entry point
  * @b: number of bytes
  * Return: 0
  */
