@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _memset - entry point
+ * *_memset - entry point
  * @s: string
  * @b: char to copy
  * @n: integer
@@ -21,12 +21,12 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- * _calloc - entry point
+ * *_calloc - entry point
  * @nmemb: integer
  * @size: size of
- * Return: 0
+ * Return: pointer
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
 
