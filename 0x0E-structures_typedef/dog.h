@@ -2,28 +2,24 @@
 #define DOG_H
 
 /**
- * dog_t - typedef for struct dog
+ * struct dog - a new type describing a dog
+ * @name: the name
+ * @age: the age
+ * @owner: the owner
  */
-
-typedef struct dog dog_t;
-/**
- * struct dog - struct that
- * @name: name
- * @age: age
- * @owner: owner
- *
- * Desceiption: struct called
- */
-
 struct dog
 {
 	char *name;
 	float age;
-	char *owner;
+	char *owner:
 };
 
-void init_dog(struct dog *d, xhar *name, float age, xhar *owner);
+/**
+ * *dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
 void print_dog(struct dog *d);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
